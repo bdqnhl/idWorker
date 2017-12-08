@@ -80,46 +80,8 @@ public class IdWorker {
 
     public static void main(String[] args) throws Exception {
         System.out.println(timeGen());
-
         IdWorker idWorker = IdWorker.getFlowIdWorkerInstance();
-        // System.out.println(Long.toBinaryString(idWorker.nextId()));
-        for(int i=0;i<1;i++){
-            System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());
-            System.out.println(idWorker.nextId());
-           // Thread.sleep(100);
-        }
+        System.out.println(idWorker.nextId());
     }
 
 }
