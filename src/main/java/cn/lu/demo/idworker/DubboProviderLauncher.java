@@ -1,13 +1,22 @@
 package cn.lu.demo.idworker;
 
-import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan;
+import com.alibaba.boot.dubbo.annotation.EnableDubboConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@DubboComponentScan("cn.lu.demo.idworker.service")
+@EnableDubboConfiguration
 public class DubboProviderLauncher {
 	public static void main(String[] args) {
 		SpringApplication.run(DubboProviderLauncher.class, args);
+		synchronized (DubboProviderLauncher.class) {
+			while (true) {
+				try {
+					DubboProviderLauncher.class.wait();
+				} catch (InterruptedException e) {
+					// swallow it
+				}
+			}
+ 		 }
 	}
 }
